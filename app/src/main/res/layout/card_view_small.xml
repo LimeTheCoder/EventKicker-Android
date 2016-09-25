@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:id="@+id/cv"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        card_view:cardElevation="0.01dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img_thumbnail"
+                android:layout_width="match_parent"
+                android:src="@drawable/baltoro_glacier"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_nature"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:background="#5c1b1b1b"
+                android:alpha="0.8"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:text="Guitar evening"
+                android:layout_alignBottom="@+id/img_thumbnail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

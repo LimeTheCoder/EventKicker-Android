@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        card_view:cardCornerRadius="3dp"
+        android:id="@+id/cv"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        card_view:cardElevation="0.01dp"
+        android:layout_marginTop="5dp">
+
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/comment_author"
+              android:maxLines="1"
+              android:singleLine="true"
+              android:textSize="20sp"
+              android:gravity="center_vertical"
+              android:textStyle="bold"
+              android:text = "Author">
+    </TextView>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/comment_content"
+              android:maxLines="4"
+              android:layout_marginTop="7dp"
+              android:layout_marginLeft="10dp"
+              android:textSize="17sp"
+              android:text = "Comment">
+    </TextView>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/comment_date"
+              android:layout_marginTop="5dp"
+              android:text = "Date">
+    </TextView>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
