@@ -2,7 +2,7 @@
 
 Android application which help users to organize their own events.
 
-## Features
+## User can:
 
 * Create own event
 * Comment others user events
